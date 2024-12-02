@@ -1,1 +1,33 @@
-# MATH37725772
+java c
+MATH3772/5772
+Multivariate   Analysis   PracticalA   data   ﬁle   athlrecs   .txt   containing   country   record   times   for   men’s   track   events   for   55   coun-   tries   immediately   prior   to   the   1984   Olympic   Games   can   be   found   in   Minerva.    It   contains   the   following   variables:
+Country:          Name   of   country
+m100:                         Record   time   for   100m   race   in   seconds
+m200:                         Record   time   for   200m   race   in   seconds
+m400:                         Record   time   for   400m   race   in   seconds
+m800:                         Record   time   for   800m   race   in   minutes
+m1500:                   Record   time   for   1500m   race   in   minutes
+km5:                               Record   time   for   5000m   race   in   minutes
+km10:                         Record   time   for   10000m   race   in   minutes
+mara:                         Record   time   for   the   Marathon   (approx.    26   miles)   in   minutes
+status:                      1   for   developed   countries;   3   for   third   world   countries
+For   the   purposes   of   this   practical,   just   concentrate   on   the   4   races   m100,   m200,   m400,   m800.   Simultaneous   conﬁdence   intervals   may   be   helpful   for   parts   2   and   3.
+1.    Examine   whether   it   is   reasonable   to   assume   that   the   data   can   be   described   as   multivariate   normal.2.    For   the   whole   set   of   55   countries,   investigate   the   hypothesis   μ800    =   2μ400    =   4μ200    =   8μ100   .   This   hypothesis   says   that   the   speed   of the   record   runs   over   that   range   of   distances   is   constant   (after   ﬁrst   ensuring   the   units   of   time   are   the   same   for   all   races).         To   carry   out   this   test   you   may   ﬁnd   it   convenient to   make   a   linear transformation   of the   data.    Let   X   denote   a   55 ×   4   data   matrix   for the races of interest.    Find   a   matrix   A(3 ×   4)   such that   if the   above   hypothesis   holds,   then   the   mean   of the   data   matrix   Y = XAT    is   0.3.    The   countries   have   been   split    (somewhat   arbitrarily)   into   developed   countries   (status   =   1)   and   third   world   countries   (status   =   3).      Next   investigate   the   hypothesis   that   the   4-dimensional   mean   vector   for   race   times   is   the   same   for   the   two   groups   of countries.
+4.    [Level   5   only.]    Carry   out   a   kmeans   clustering   of the   data   into   k   =   2   clusters.      Compare   the   resulting   clusters   to   the   partitioning   of the   data   by   the   status   variable.
+Some   useful   commands   in   R
+ath=read.table("athlrecs.txt",header=T)
+attach(ath)
+x=cbind(m100,   m200,   m400,   m800)      #    create      a      data   matrix      for      the      4      races
+                                                                                                                       #      using      all      55      countries
+x1=x[status==1,]      #      define      a      23      x      4      submatrix      of      developed      countries
+x2=x[status==3,]      #      define      a     代 写MATH3772/5772 Multivariate Analysis Practical
+代做程序编程语言 32      x      4      submatrix      of      third      world      countries
+   
+General   assessment   information
+This   practical   is   included   in   the   assessment   for   MATH3772/5772.         It   comprises      20%   of   your   overall   mark   for   the   module.Your   report   should   be   submitted   by   5pm   on   Monday   2   December   2024   in   Gradescope   (in   Min-   erva   go   to   Assessment      and   Feedback    -      >   Submit      My   Work    -      >   Gradescope,      and   look   for   “Practical”).You   are   encouraged   to   collaborate   with   other   students,   but   the   work   that   you   submit   must   be   done independently.   Furthermore, the use of artiﬁcial intelligence   (e.g.    ChatGPT) is prohibited.   Serious   consequences   will   result   if copying   or   use   of AI   is   detected.There   will   be   two   available   practical   sessions   to   give   opportunity   for   you   to   ask   me   questions.   This   will   be   on   Thursday   21   November   2024   at   9-11am   in   the   Psychology   Computer   Cluster   1.43,   and on the same day at   12noon-2pm   in   the   EC   Stoner   Computer   Cluster   6.61.    I anticipate   that   students   will   bring   questions   about   both   statistical   questions   (what   they   are   supposed   to   be   doing)   and   computing   problems   (how   to   get   an   R   program   to   work).
+The   analyses   in   the   practical   should   be   performed   using   the   statistics   program   R.
+Writing   up
+Write   a   short   report      (in   Word   or   Latex,   must   be   typed)   outlining   the   analyses   you   have   per-   formed, including discussions of how appropriate the   techniques   were   and   explaining   the   results.The   report   should   be   aimed   at   someone   who   has   a   basic   knowledge   of statistics   and   hypothesis   tests.    The   report   should   contain   relevant   plots   (which   should   be   explained   in   the   report)   that   can be copied from R. The   report   should   not   contain   any   R   commands   or   output   directly   copied   and pasted from the R console.    The aim of this practical is to explain the   analyses   that   you   have   performed   and   giving   R   commands   does   not   do   this.    The   R   commands   and   relevant   outputs   should   be   put   in   the   appendix      (below).    The   report   should   be   word   processed   and   should   not   exceed   6   pages   of   A4   in   total,   plus   two   extra   pages   for   Level   5,   including   any   plots   that   you   wish   to   show.   The   texts   in   the   report   should   be   single   spaced   with   at   least   11   pt   font   size.In   addition   to   the   report,   attach   an   appendix   that   includes   all   of   the   R   commands   that   you   have   used   and   the   associated   output.   There   is   no   need   to   reproduce   any   plots   in   the   appendix.   You   also   should   include   an   Academic   Integrity   Form   (available   in   Minerva)   before   submitting   your   report.    The   appendix   and   the   academic   integrity   form   do   not   count   towards   the   number   of pages   in   your   report.
+
+         
+加QQ：99515681  WX：codinghelp  Email: 99515681@qq.com
